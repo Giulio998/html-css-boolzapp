@@ -7,6 +7,8 @@
 :root{
     --header:57px;
     --iconColor:#B2B2B2;
+    --iconColorChat:#6B7376;
+    --accentColor:#019688;
 }
 
 .container{
@@ -43,6 +45,18 @@ button{
     padding: 5px;
 }
 
+.padding10px{
+    padding: 10px;
+}
+
+.gap5px{
+    gap: 5px;
+}
+
+.lineHeight10{
+    line-height: 10px;
+}
+
 .gap12px{
     gap: 12px;
 }
@@ -60,6 +74,15 @@ button{
 .padding0px15px{
     padding: 0 15px;
 }
+
+.padding11px{
+    padding: 11px;
+}
+
+.flexGrow{
+    flex-grow: 1;
+}
+
 
 
 
@@ -88,10 +111,11 @@ button{
 
 .sideBar{
     display: none;
+    border-right: 1px solid lightgrey;
 }
 
 .app{
-     background: linear-gradient( to bottom, #019688 0%, #019688 25%, #DCDBD3 25%, #DCDBD3 100% ); 
+     background: linear-gradient( to bottom, var(--accentColor) 0%, var(--accentColor) 25%, #DCDBD3 25%, #DCDBD3 100% ); 
 }
 
 .chatInput{
@@ -121,14 +145,15 @@ button{
 
 .profileIcon{
     clip-path: circle();
+    height: 47px ;
 }
 
 .chattingInfo h2{
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .chattingInfo p{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 
@@ -161,6 +186,10 @@ button{
     color: grey;
 }
 
+.sideNavBar a{
+    padding: 0 8px;
+}
+
 .messageMenu{
     font-size: 12px;
     padding-left: 2px;
@@ -170,11 +199,73 @@ button{
     display: none;
 }
 
+.sideNavBar{
+    background-color: #EAEAEA;
+    height: var(--header);
+}
+
+.iconChat{
+    color: var(--iconColorChat);
+}
+
+.hideLinks{
+    display: none;
+}
+
+
+.chatList{
+    overflow: auto;
+    height: calc(100% - 154px);
+}
+
+.notification{
+    background-color: #8EDAFC;
+    height: 57px;
+    display: none;
+}
+
+.notificationBell{
+    color:#8EDAFC ;
+}
+
+.notification button{
+    padding: 11px;
+    clip-path: circle();
+}
+
+.notification p{
+    font-size: 10px;
+}
+
+.notification a{
+    font-size: 9px;
+}
+
+.searchBar{
+    display: none;
+}
+
+.searchBar input{
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    
+   
+}
+
+.searchBar input:focus-visible{
+    border-width: 0px;
+}
+
+.colorGrey:hover {
+    color: var(--accentColor)
+}
+
 /* Query */
 
 @media screen and (min-width:576px) {
     .sideBar{
-        width: 70px;
+        width: 57px;
         display: block;
         background-color: #FFFFFF;
     }
@@ -222,5 +313,26 @@ button{
 
     .chatPage{
         padding: 40px 55px;
+    }
+
+
+    .chatList.alignCenter{
+        align-items: start;
+    }
+
+    .sideNavBar.jCCenter {
+        justify-content: space-between;
+    }
+
+    .hideLinks{
+        display: flex;
+    }
+
+    .notification{
+        display: flex;
+    }
+
+    .searchBar{
+        display: block;
     }
 }
