@@ -5,7 +5,8 @@
     font-family: "Lato", sans-serif;
 }
 :root{
-    --header:57px
+    --header:57px;
+    --iconColor:#B2B2B2;
 }
 
 .container{
@@ -38,6 +39,27 @@ button{
     align-items: center;
 }
 
+.padding5px{
+    padding: 5px;
+}
+
+.gap12px{
+    gap: 12px;
+}
+
+.alignSelfEnd{
+    align-self: flex-end;
+}
+
+.cursorPointer{cursor:pointer}
+   
+.width100{
+    width: 100%;
+}
+
+.padding0px15px{
+    padding: 0 15px;
+}
 
 
 
@@ -56,6 +78,7 @@ button{
 .chatPage{
     flex-grow: 1;
     background-image: url(../img/mine.jpg);
+    padding: 22px 15px;
 }
 
 .chatBar{
@@ -91,6 +114,61 @@ button{
     font-size: 20px;
 }
 
+.chattingIcon{
+    width: 86px;
+   
+}
+
+.profileIcon{
+    clip-path: circle();
+}
+
+.chattingInfo h2{
+    font-size: 17px;
+}
+
+.chattingInfo p{
+    font-size: 12px;
+}
+
+
+.message{
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sentMessage{
+    align-self: flex-end;
+    background-color: #D5FABA;
+}
+
+
+.receivedMessage{
+    background-color: #FFFFFF;
+}
+
+.sentTime{
+    font-size: small;
+}
+
+.colorGrey{
+    color: var(--iconColor);
+}
+
+.mainNavBar a{
+    padding: 0 8px;
+    color: grey;
+}
+
+.messageMenu{
+    font-size: 12px;
+    padding-left: 2px;
+}
+
+.links{
+    display: none;
+}
 
 /* Query */
 
@@ -116,6 +194,17 @@ button{
     .chatBar.jCCenter{
         justify-content: space-between;
     }
+
+    .message {
+        width: 65%;}
+
+    .chatPage{
+        padding: 27px 55px;
+    }
+
+    .links{
+        display: block;
+    }
 }
 
 
@@ -129,5 +218,9 @@ button{
         width: 80%;
         margin: auto;
         padding: 20px 0;
+    }
+
+    .chatPage{
+        padding: 40px 55px;
     }
 }

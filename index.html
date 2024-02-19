@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c35ecedc9f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="app greenBack">
+    <div class="app ">
         <div class="container flex">
 
             <!-- SIDEBAR --------------------------------------------------------->
@@ -41,18 +42,61 @@
 
             <!-- MAINCONTENT --------------------------------------------------------->
             <div class="mainContent flex directionColumn">
+
+
                 <!-- MAINNAVBAR --------------------------------------------------------->
-                <div class="mainNavBar">
-
+                <div class="mainNavBar flex ">
+                    <div class="chattingIcon jCCenter flex padding5px">
+                        <img class="profileIcon" src="./img/avatar_1.jpg" alt="avatar">
+                    </div>
+                    <div class="flex alignCenter jCSpace width100">
+                        <div class="chattingInfo flex directionColumn jCCenter">
+                            <h2>Michele</h2>
+                            <p>Ultimo accesso oggi alle 16:26</p>
+                        </div>
+                        <div class="padding0px15px links">
+                            <a href=""><i class="fa-solid fa-magnifying-glass colorGrey"></i></a>
+                            <a href=""><i class="fa-solid fa-paperclip colorGrey"></i></a>
+                            <a href=""><i class="fa-solid fa-ellipsis-vertical colorGrey"></i></a>
+                        </div>
+                    </div>
 
                 </div>
+
+
                 <!-- CHATPAGE --------------------------------------------------------->
-                <div class="chatPage">
-
+                <div class="chatPage flex directionColumn gap12px">
+                    <div class="sentMessage message flex directionColumn">
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci numquam pariatur, totam veniam quas, libero sequi exercitationem, ratione deleniti vitae porro cupiditate.</p>
+                            <i class="fa-solid fa-chevron-down colorGrey messageMenu"></i>
+                        </div>
+                        <div class="alignSelfEnd sentTime colorGrey">
+                           16:23 
+                        </div>
+                    </div>
+                    <div class="receivedMessage message flex directionColumn">
+                        <div class="flex">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci numquam pariatur, totam veniam quas, libero sequi exercitationem, ratione deleniti vitae porro cupiditate.</p>
+                            <i class="fa-solid fa-chevron-down colorGrey messageMenu"></i>
+                        </div>
+                        <div class="alignSelfEnd sentTime colorGrey">
+                           16:26 
+                        </div>
+                    </div>
+                    
 
                 </div>
+
+
+
                 <!-- CHATBAR --------------------------------------------------------->
-                <div class="chatBar">
+                <div class="chatBar flex jCCenter alignCenter">
+                    <button class="icon cursorPointer"><i class="fa-regular fa-face-smile"></i></button>
+                    <div class="chatInput flex alignCenter">
+                        <input type="text" placeholder="Scrivi un messaggio">
+                    </div>
+                    <button class="icon cursorPointer"><i class="fa-solid fa-microphone"></i></button>
 
 
                 </div>
