@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.container{
+    height: 100vh;
+}
+
+
+/* Utility */
+
+.flex{
+    display: flex;
+}
+
+.directionColumn{
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+/* Style */
+
+.mainContent{
+    width: 100%;
+}
+
+
+.mainNavBar{
+    background-color: #EAEAEA;
+    height: 70px;
+}
+
+.chatPage{
+    flex-grow: 1;
+    background-image: url(../img/mine.jpg);
+}
+
+.chatBar{
+    height: 70px;
+    background-color: #EAEAEA;
+}
+
+.sideBar{
+    display: none;
+}
+
+.app{
+    background-color: #DBDBD4;
+}
+
+
+
+
+
+
+/* Query */
+
+@media screen and (min-width:576px) {
+    .sideBar{
+        width: 70px;
+        display: block;
+        background-color: #FFFFFF;
+    }
+    
+}
+
+.mainContent{
+   
+}
+
+@media screen and (min-width:992px) {
+    .sideBar{
+        width: 400px;
+    }
+    
+    .container{
+        width: 70%;
+        margin: auto;
+    }
+}
