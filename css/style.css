@@ -4,11 +4,17 @@
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
 }
+:root{
+    --header:57px
+}
 
 .container{
     height: 100vh;
 }
 
+button{
+    border: none;
+}
 
 /* Utility */
 
@@ -20,8 +26,17 @@
     flex-direction: column;
 }
 
+.jCCenter{
+    justify-content: center;
+}
 
+.jCSpace{
+    justify-content: space-between;
+}
 
+.alignCenter{
+    align-items: center;
+}
 
 
 
@@ -35,7 +50,7 @@
 
 .mainNavBar{
     background-color: #EAEAEA;
-    height: 70px;
+    height: var(--header);
 }
 
 .chatPage{
@@ -44,7 +59,7 @@
 }
 
 .chatBar{
-    height: 70px;
+    height:var(--header);
     background-color: #EAEAEA;
 }
 
@@ -53,12 +68,28 @@
 }
 
 .app{
-    background-color: #DBDBD4;
+     background: linear-gradient( to bottom, #019688 0%, #019688 25%, #DCDBD3 25%, #DCDBD3 100% ); 
+}
+
+.chatInput{
+    width: 90%;
+    height: 80%;
+}
+
+.chatInput input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
 }
 
 
-
-
+.chatBar .icon{
+    padding: 16px 25px;
+    display: none;
+    font-size: 20px;
+}
 
 
 /* Query */
@@ -70,19 +101,33 @@
         background-color: #FFFFFF;
     }
     
+    .chatInput{
+        width: 80%;
+    }
+
+    .chatBar .icon{
+        display: block;
+    }
+    
+    .chatInput{
+        width: 100%;
+    }
+
+    .chatBar.jCCenter{
+        justify-content: space-between;
+    }
 }
 
-.mainContent{
-   
-}
+
 
 @media screen and (min-width:992px) {
     .sideBar{
-        width: 400px;
+        width: 300px;
     }
     
     .container{
-        width: 70%;
+        width: 80%;
         margin: auto;
+        padding: 20px 0;
     }
 }
